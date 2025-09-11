@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id eight
+id five
+id four
+id information
+id nine
+id one
+id play_grid
+id seven
+id six
+id three
+id two
+layout activity_main
+layout main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.AndroidTicTacToe
+style Theme.AndroidTicTacToe
+xml backup_rules
+xml data_extraction_rules
