@@ -31,11 +31,14 @@ public class TicTacToeGame {
     }
 
     /** Pone una jugada */
-    public void setMove(char player, int location) {
+    public boolean setMove(char player, int location) {
         if (mBoard[location] == OPEN_SPOT) {
             mBoard[location] = player;
+            return true;   // la jugada fue válida
         }
+        return false;      // ya estaba ocupada
     }
+
 
     /** Jugada de la computadora */
     public int getComputerMove() {
@@ -128,4 +131,9 @@ public class TicTacToeGame {
     public void setDifficultyLevel(DifficultyLevel difficultyLevel) {
         mDifficultyLevel = difficultyLevel;
     }
+
+    public char getBoardOccupant(int location) {
+        return mBoard[location];
+    }
+
 }
