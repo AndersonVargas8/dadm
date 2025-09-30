@@ -3,7 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:paddingTop="?attr/actionBarSize">
+    android:paddingTop="?attr/actionBarSize"
+    android:paddingBottom="16dp"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:layout_marginTop="12dp">
 
     <com.dadm.tictactoe.BoardView
         android:id="@+id/board"
@@ -18,4 +22,12 @@
         android:text="info"
         android:textSize="20sp"
         android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human: 0  Android: 0  Ties: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
 </LinearLayout>
